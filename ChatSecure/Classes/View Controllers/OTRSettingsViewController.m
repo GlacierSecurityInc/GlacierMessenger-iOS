@@ -301,7 +301,7 @@ static NSString *const circleImageName = @"31-circle-plus-large.png";
     UIAlertAction * okButtonItem = [UIAlertAction actionWithTitle:OK_STRING() style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
         
         // disconnect is already called in removeProtocolForAccount. I'm wondering if there is
-        // a race condition that causes iOS-44 (IOSM-8). Either way, no need to call it twice?
+        // a race condition that causes the occasional crash. Either way, no need to call it twice?
         /*if( [[OTRProtocolManager sharedInstance] isAccountConnected:account])
          {
          id<OTRProtocol> protocol = [[OTRProtocolManager sharedInstance] protocolForAccount:account];

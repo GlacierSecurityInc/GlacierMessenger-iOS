@@ -27,7 +27,6 @@ abstract_target 'ChatSecureCorePods' do
   pod 'VTAcknowledgementsViewController', '~> 1.2'
   
   # pod 'BButton', '~> 4.0'
-  # ALF IOSM-11
   pod 'BButton', :git => 'https://github.com/jessesquires/BButton.git', :commit => 'b3d96ad996d9b71a82329c0ca724cad62564f977'
 
   pod 'TUSafariActivity', '~> 1.0'
@@ -42,20 +41,13 @@ abstract_target 'ChatSecureCorePods' do
   # Debugging
   pod 'Reveal-SDK', :configurations => ['Debug']
 
-  # ALF IOSM-9
   pod 'DGActivityIndicatorView', :git => 'https://github.com/ninjaprox/DGActivityIndicatorView.git'
-
-  # ALF IOSM-7
   pod 'MapboxStatic.swift', :git => 'https://github.com/afriedmanGlacier/MapboxStatic.swift'
   pod 'Mapbox-iOS-SDK', '~> 3.6'
-
-  # ALF IOSM-138
   pod 'AWSCognito'
   pod 'AWSCognitoIdentityProvider'
   pod 'AWSS3'
   pod 'CZPicker'
-
-  # ALF IOSM-134
   pod 'DZNEmptyDataSet'
 
   # Utility
