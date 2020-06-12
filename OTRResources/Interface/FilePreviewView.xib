@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontAwesome.ttf">
+            <string>FontAwesome</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FilePreviewView" customModule="ChatSecureCore">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to view" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kRx-IK-Dt2" userLabel="clickLabel">
+                    <rect key="frame" x="23" y="8" width="171" height="32"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="example.org" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aIq-78-idA" userLabel="filenameLabel">
+                    <rect key="frame" x="23" y="48" width="69.5" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="HKp-JL-wLF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5L5-Fg-h5j" userLabel="fileImageLabel">
+                    <rect key="frame" x="202" y="15" width="32" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="Jxf-IH-43T"/>
+                        <constraint firstAttribute="height" constant="40" id="NLk-3H-xna"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="32"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="aIq-78-idA" secondAttribute="bottom" constant="8" id="06K-if-DH8"/>
+                <constraint firstItem="aIq-78-idA" firstAttribute="top" secondItem="kRx-IK-Dt2" secondAttribute="bottom" constant="8" id="9bx-W4-ncZ"/>
+                <constraint firstItem="5L5-Fg-h5j" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Peh-6Z-tbe"/>
+                <constraint firstItem="aIq-78-idA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="23" id="bpx-yA-7qb"/>
+                <constraint firstItem="kRx-IK-Dt2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="dnz-LC-bxw"/>
+                <constraint firstAttribute="trailing" secondItem="5L5-Fg-h5j" secondAttribute="trailing" constant="16" id="j0T-CX-6US"/>
+                <constraint firstItem="kRx-IK-Dt2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="23" id="lKS-lk-Uou"/>
+                <constraint firstItem="5L5-Fg-h5j" firstAttribute="leading" secondItem="kRx-IK-Dt2" secondAttribute="trailing" constant="8" id="sho-fT-B5q"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="clickToOpenLabel" destination="kRx-IK-Dt2" id="9dn-WW-ph5"/>
+                <outlet property="fileImageLabel" destination="5L5-Fg-h5j" id="iu0-kb-WDH"/>
+                <outlet property="filenameLabel" destination="aIq-78-idA" id="BYV-YL-BH7"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="80.357142857142847"/>
+        </view>
+    </objects>
+</document>

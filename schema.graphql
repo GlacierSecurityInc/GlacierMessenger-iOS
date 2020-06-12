@@ -1,0 +1,135 @@
+﻿schema {
+  query: Query
+  mutation: Mutation
+  subscription: Subscription
+}
+
+type GlacierUsers {
+  email: String
+  extension_voiceserver: String
+  first_name: String
+  glacierpwd: String
+  last_name: String
+  messenger_id: String
+  organization: String!
+  user_name: String
+  username: String!
+}
+
+type GlacierUsersConnection {
+  items: [GlacierUsers]
+  nextToken: String
+}
+
+type Mutation {
+  createGlacierUsers(input: CreateGlacierUsersInput!): GlacierUsers
+  deleteGlacierUsers(input: DeleteGlacierUsersInput!): GlacierUsers
+  updateGlacierUsers(input: UpdateGlacierUsersInput!): GlacierUsers
+}
+
+type Query {
+  getGlacierUsers(organization: String!, username: String!): GlacierUsers
+  listGlacierUsers(filter: TableGlacierUsersFilterInput, limit: Int, nextToken: String): GlacierUsersConnection
+}
+
+type Subscription {
+  onCreateGlacierUsers(email: String, extension_voiceserver: String, first_name: String, organization: String, username: String): GlacierUsers @aws_subscribe(mutations : ["createGlacierUsers"])
+  onDeleteGlacierUsers(email: String, extension_voiceserver: String, first_name: String, organization: String, username: String): GlacierUsers @aws_subscribe(mutations : ["deleteGlacierUsers"])
+  onUpdateGlacierUsers(email: String, extension_voiceserver: String, first_name: String, organization: String, username: String): GlacierUsers @aws_subscribe(mutations : ["updateGlacierUsers"])
+}
+
+input CreateGlacierUsersInput {
+  email: String
+  extension_voiceserver: String
+  first_name: String
+  glacierpwd: String
+  last_name: String
+  messenger_id: String
+  organization: String!
+  user_name: String
+  username: String!
+}
+
+input DeleteGlacierUsersInput {
+  organization: String!
+  username: String!
+}
+
+input TableBooleanFilterInput {
+  eq: Boolean
+  ne: Boolean
+}
+
+input TableFloatFilterInput {
+  between: [Float]
+  contains: Float
+  eq: Float
+  ge: Float
+  gt: Float
+  le: Float
+  lt: Float
+  ne: Float
+  notContains: Float
+}
+
+input TableGlacierUsersFilterInput {
+  email: TableStringFilterInput
+  extension_voiceserver: TableStringFilterInput
+  first_name: TableStringFilterInput
+  glacierpwd: TableStringFilterInput
+  last_name: TableStringFilterInput
+  messenger_id: TableStringFilterInput
+  organization: TableStringFilterInput
+  user_name: TableStringFilterInput
+  username: TableStringFilterInput
+}
+
+input TableIDFilterInput {
+  beginsWith: ID
+  between: [ID]
+  contains: ID
+  eq: ID
+  ge: ID
+  gt: ID
+  le: ID
+  lt: ID
+  ne: ID
+  notContains: ID
+}
+
+input TableIntFilterInput {
+  between: [Int]
+  contains: Int
+  eq: Int
+  ge: Int
+  gt: Int
+  le: Int
+  lt: Int
+  ne: Int
+  notContains: Int
+}
+
+input TableStringFilterInput {
+  beginsWith: String
+  between: [String]
+  contains: String
+  eq: String
+  ge: String
+  gt: String
+  le: String
+  lt: String
+  ne: String
+  notContains: String
+}
+
+input UpdateGlacierUsersInput {
+  email: String
+  extension_voiceserver: String
+  first_name: String
+  glacierpwd: String
+  last_name: String
+  messenger_id: String
+  organization: String!
+  user_name: String
+  username: String!
+}
