@@ -42,6 +42,10 @@ Next you'll need to create your own version of environment-specific data. Make a
     
 Glacier Messenger currently uses AWS Cognito to facilitate single signon model across the platform of Glacier applications. As part of this, the AWS Cognito and S3 IDs need to be added to the Secrets.plist file
 
+Glacier Messenger currently uses AWS Cognito to facilitate single signon model across the platform of Glacier applications. As part of this, the AWS Cognito and S3 IDs need to be added to the Secrets.plist file. 
+
+Note: This has changed in the latest version and pulls this information from an awsconfiguration.json file if one is available. Single signon also makes use of AWS Amplify, and thus to be used in this way would need to setup Amplify and a related backend environment. See [AWS Amplify documentation](https://aws-amplify.github.io/docs/js/start).
+
 You'll need to manually change the Team ID under Project -> Targets -> ChatSecure -> Signing. The old .xcconfig method doesn't seem to work well anymore.
 
 Open `Messenger.xcworkspace` in Xcode. Before building, there is an error in the SQLite.swift pod that needs to be fixed. Unfortunately the fix requires making a change to the pod which requires unlocking the file. The change is to SQLite.swift/standard/fts3_tokenizer.h. 
