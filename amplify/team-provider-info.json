@@ -1,0 +1,15 @@
+{
+    "ios": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-ios-messenger-ios-94805-authRole",
+            "UnauthRoleArn": "arn:aws:iam::436047375239:role/amplify-ios-messenger-ios-94805-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::436047375239:role/amplify-ios-messenger-ios-94805-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-ios-messenger-ios-94805-deployment",
+            "UnauthRoleName": "amplify-ios-messenger-ios-94805-unauthRole",
+            "StackName": "amplify-ios-messenger-ios-94805",
+            "StackId": "arn:aws:cloudformation:us-east-1:436047375239:stack/amplify-ios-messenger-ios-94805/83003520-5194-11ea-81ee-12bdd946785e",
+            "AmplifyAppId": "d1c35sb0rs9a27"
+        }
+    }
+}

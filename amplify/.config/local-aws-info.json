@@ -1,0 +1,12 @@
+{
+    "ios": {
+        "configLevel": "project",
+        "useProfile": true,
+        "profileName": "default"
+    },
+    "iosdev": {
+        "configLevel": "project",
+        "useProfile": true,
+        "profileName": "dev"
+    }
+}

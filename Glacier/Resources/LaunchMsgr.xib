@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="glacier_2a373e" translatesAutoresizingMaskIntoConstraints="NO" id="nbc-6n-lAW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="glacier-darkBG_launch" translatesAutoresizingMaskIntoConstraints="NO" id="OqS-G4-dPi">
+                    <rect key="frame" x="13" y="323" width="500" height="500"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="500" id="I6F-2L-9Rm"/>
+                        <constraint firstAttribute="width" constant="500" id="chx-4R-xb2"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.16470588235294117" green="0.21568627450980393" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" red="0.16470588235294117" green="0.21568627450980393" blue="0.24313725490196078" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="OqS-G4-dPi" secondAttribute="bottom" constant="-156" id="q1l-Lv-7xl"/>
+                <constraint firstAttribute="trailing" secondItem="OqS-G4-dPi" secondAttribute="trailing" constant="-138" id="ur7-hD-s14"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="39.5" y="65.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="glacier-darkBG_launch" width="512" height="512"/>
+        <image name="glacier_2a373e" width="1" height="1"/>
+    </resources>
+</document>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>kOTRXMPPResource</key>
+	<string>messenger</string>
+	<key>kOTRFeedbackEmail</key>
+	<string>support@glaciersecurity.com</string>
+	<key>GitHubURL</key>
+	<string>https://github.com/GlacierSecurityInc/GlacierMessenger-iOS</string>
+	<key>ProjectURL</key>
+	<string>https://www.glaciersecurity.com</string>
+	<key>ShouldShowPushWarning</key>
+	<true/>
+	<key>ShouldShowServerCell</key>
+	<false/>
+	<key>ShowsColorForStatus</key>
+	<true/>
+	<key>AllowsDonation</key>
+	<false/>
+	<key>TorEnabled</key>
+	<false/>
+	<key>AllowGroupOMEMO</key>
+	<true/>
+	<key>AllowDebugFileLogging</key>
+	<false/>
+	<key>AllowOMEMO</key>
+	<true/>
+</dict>
+</plist>

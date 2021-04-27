@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KPb-UX-Qc8" customClass="CustomCollectionViewCell" customModule="Glacier" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U2p-tv-WWX">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQc-Gd-VI9" userLabel="teamLabel" customClass="InsetsLabel" customModule="Glacier" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="5" width="100" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="JEQ-tR-adV"/>
+                <constraints>
+                    <constraint firstItem="kQc-Gd-VI9" firstAttribute="leading" secondItem="U2p-tv-WWX" secondAttribute="leading" id="EwB-gP-dfh"/>
+                    <constraint firstItem="JEQ-tR-adV" firstAttribute="bottom" secondItem="kQc-Gd-VI9" secondAttribute="bottom" constant="5" id="UmZ-xv-yxq"/>
+                    <constraint firstItem="kQc-Gd-VI9" firstAttribute="top" secondItem="U2p-tv-WWX" secondAttribute="top" constant="5" id="ZkF-Id-jvU"/>
+                    <constraint firstAttribute="trailing" secondItem="kQc-Gd-VI9" secondAttribute="trailing" id="lqN-I9-3lg"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="cellTeamView" destination="kQc-Gd-VI9" id="T1U-y5-47B"/>
+            </connections>
+            <point key="canvasLocation" x="-843.47826086956525" y="-209.59821428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>

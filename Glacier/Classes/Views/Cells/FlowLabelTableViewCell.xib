@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mTq-j8-DfQ" customClass="FlowLabelTableViewCell" customModule="Glacier" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mTq-j8-DfQ" id="4cZ-KO-kAl">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qgJ-wj-Dpr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="2Ly-kA-RTh" userLabel="collectionViewHeight"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Gy5-1F-fXu">
+                            <size key="itemSize" width="100" height="42"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="mTq-j8-DfQ" id="C8s-u8-nVa"/>
+                            <outlet property="delegate" destination="mTq-j8-DfQ" id="tXI-En-Tro"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qgJ-wj-Dpr" firstAttribute="leading" secondItem="4cZ-KO-kAl" secondAttribute="leading" id="AyA-Xr-xJr"/>
+                    <constraint firstItem="qgJ-wj-Dpr" firstAttribute="centerY" secondItem="4cZ-KO-kAl" secondAttribute="centerY" id="p6b-cv-JgS"/>
+                    <constraint firstItem="qgJ-wj-Dpr" firstAttribute="trailing" secondItem="4cZ-KO-kAl" secondAttribute="trailing" id="vjP-yK-6dl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+            <connections>
+                <outlet property="collectionViewHeightConstraint" destination="2Ly-kA-RTh" id="TW6-X2-YRv"/>
+                <outlet property="myCollectionView" destination="qgJ-wj-Dpr" id="z6P-2L-Vbd"/>
+            </connections>
+            <point key="canvasLocation" x="188.40579710144928" y="28.794642857142854"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
